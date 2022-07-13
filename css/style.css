@@ -1,0 +1,536 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: auto auto auto auto auto auto auto;
+      grid-template-rows: auto auto auto auto auto auto auto;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.container a,
+.container span,
+.container h1,
+.container h2,
+.container h3,
+.container h4 {
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+}
+
+.container p {
+  font-family: "Source Serif Pro", serif;
+}
+
+.container .header-section {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 8;
+  grid-column: 1/9;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.48)), to(rgba(0, 0, 0, 0.48))), url(/img/header-background-img.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.48), rgba(0, 0, 0, 0.48)), url(/img/header-background-img.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 120px 0px;
+  vertical-align: middle;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.container .header-section .header-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.container .header-section .header-flex .header-flex-one {
+  padding-top: 20px;
+  color: white;
+}
+
+.container .header-section .header-flex .header-flex-one h1 {
+  font-size: 45px;
+  padding-bottom: 20px;
+}
+
+.container .header-section .header-flex .header-flex-one p:nth-child(1) {
+  padding-bottom: 20px;
+  font-size: 18px;
+}
+
+.container .header-section .header-flex .header-flex-one p:last-child {
+  font-size: 22px;
+}
+
+.container .header-section .header-flex .header-flex-two {
+  background-color: #f5f4f3;
+  padding: 50px 30px;
+  width: 368px;
+}
+
+.container .header-section .header-flex .header-flex-two p:nth-child(1) {
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.container .header-section .header-flex .header-flex-two .form-group input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  font-size: 15px;
+  border: 1px solid;
+  border-radius: 4px;
+}
+
+.container .header-section .header-flex .header-flex-two .header-flex-two_button {
+  width: 100%;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: #1990ff;
+  border: 0px;
+  padding: 15px 20px;
+  cursor: pointer;
+}
+
+.container .perks-section {
+  padding-top: 40px;
+  padding-bottom: 70px;
+  text-align: center;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 8;
+  grid-column: 1/9;
+}
+
+.container .perks-section h1 {
+  color: #242424;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.container .perks-section p {
+  color: #3e3e3e;
+  font-size: 1.125rem;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.container .perks-section .perk-section_icon-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 80px;
+  text-align: center;
+}
+
+.container .perks-section .perk-section_icon-text .icon-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .perks-section .perk-section_icon-text .icon-text h4 {
+  font-size: 1.5rem;
+  color: #242424;
+}
+
+.container .perks-section .perk-section_icon-text .icon-text img {
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+.container .testimonial-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 8;
+  grid-column: 1/9;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #f2f2f2;
+  padding: 35px 30px;
+}
+
+.container .testimonial-section .testimonial-section_main-box {
+  width: 862px;
+  background-color: white;
+  text-align: center;
+}
+
+.container .testimonial-section .testimonial-section_main-box h1 {
+  color: #242424;
+  font-size: 2rem;
+  padding-top: 40px;
+}
+
+.container .testimonial-section .testimonial-section_main-box .testimonial-text {
+  padding-top: 30px;
+  font-size: 1.5rem;
+  color: #242424;
+  line-height: 1.5;
+}
+
+.container .testimonial-section .testimonial-section_main-box .testimonial-name {
+  line-height: 1.5;
+  padding-top: 30px;
+  color: #242424;
+  padding-bottom: 30px;
+}
+
+.container .testimonial-section .testimonial-section_main-box img {
+  max-width: 25px;
+  padding-top: 70px;
+}
+
+.container .sold-list-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 8;
+  grid-column: 1/9;
+  text-align: center;
+}
+
+.container .sold-list-section h1 {
+  font-size: 2rem;
+  color: #242424;
+}
+
+.container .sold-list-section .house-description {
+  padding-top: 30px;
+  padding-bottom: 35px;
+  color: #242424;
+}
+
+.container .sold-list-section .sold-list-section_cols {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 50px;
+}
+
+.container .sold-list-section .sold-list-section_cols .sold-list-col h2 {
+  padding-top: 30px;
+}
+
+.container .sold-list-section .sold-list-section_cols .sold-list-col img {
+  max-width: 256px;
+  max-height: 170px;
+}
+
+.container .sold-list-section .sold-list-section_cols .sold-list-col p {
+  color: #242424;
+  padding: 20px 0px;
+}
+
+.container .sold-list-section .sold-list-section_cols .sold-list-col a {
+  text-decoration: none;
+  color: #1990ff;
+  font-weight: 700;
+}
+
+.container .sell-form-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 60px;
+  padding-bottom: 70px;
+  background-color: #4c4c4c;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 8;
+  grid-column: 1/9;
+}
+
+.container .sell-form-section h1 {
+  color: white;
+  font-size: 2.5rem;
+}
+
+.container .sell-form-section p {
+  color: white;
+  padding: 30px 0px;
+}
+
+.container .sell-form-section span {
+  color: white;
+  font-size: 1.125rem;
+}
+
+.container .sell-form-section .form-group {
+  width: 600px;
+}
+
+.container .sell-form-section .form-group input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  font-size: 15px;
+  border: 1px solid;
+  border-radius: 4px;
+}
+
+.container .sell-form-section .header-flex-two_button {
+  width: 100%;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: #1990ff;
+  border: 0px;
+  padding: 12px 20px;
+  cursor: pointer;
+}
+
+.container .meet-agent-section {
+  padding: 70px 0px;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 8;
+  grid-column: 1/9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 70px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .meet-agent-section img {
+  max-width: 425px;
+}
+
+.container .meet-agent-section .jane-rain-misson p {
+  color: #242424;
+}
+
+.container .meet-agent-section .jane-rain-misson p:nth-child(1),
+.container .meet-agent-section .jane-rain-misson p:nth-child(2) {
+  padding-bottom: 20px;
+  font-size: 1.125rem;
+}
+
+.container .footer-section {
+  padding: 30px 0px;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 8;
+  grid-column: 1/9;
+  background-color: #f7f7f7;
+  color: #878787;
+  text-align: center;
+}
+
+.container .footer-section a {
+  color: #878787;
+}
+
+@media only screen and (max-width: 767px) {
+  .container {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  .container .header-section {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+    grid-column: 1/7;
+    padding: 20px 0px;
+  }
+  .container .header-section .header-flex {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .header-section .header-flex .header-flex-one {
+    margin-bottom: 20px;
+  }
+  .container .perks-section {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+    grid-column: 1/7;
+  }
+  .container .testimonial-section {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+    grid-column: 1/7;
+  }
+  .container .testimonial-section .testimonial-section_main-box h1 {
+    padding: 25px 15px;
+  }
+  .container .testimonial-section .testimonial-section_main-box p {
+    padding: 0px 15px;
+  }
+  .container .sold-list-section {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+    grid-column: 1/7;
+  }
+  .container .sell-form-section {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+    grid-column: 1/7;
+  }
+  .container .sell-form-section .form-group {
+    width: 600px;
+  }
+  .container .meet-agent-section {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+    grid-column: 1/7;
+  }
+  .container .meet-agent-section img {
+    width: 400px;
+  }
+  .container .footer-section {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+    grid-column: 1/7;
+  }
+  .container .footer-section p {
+    padding: 0px 15px;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .container {
+    background-image: none;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+  }
+  .container .header-section {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-column: 1/5;
+    padding: 20px 0px;
+  }
+  .container .header-section .header-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .header-section .header-flex .header-flex-one {
+    margin-bottom: 20px;
+    padding-left: 8px;
+  }
+  .container .header-section .header-flex .header-flex-two {
+    width: 310px;
+  }
+  .container .perks-section {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-column: 1/5;
+  }
+  .container .perks-section .perk-section_icon-text {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .testimonial-section {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-column: 1/5;
+  }
+  .container .testimonial-section .testimonial-section_main-box h1 {
+    padding: 25px 15px;
+  }
+  .container .testimonial-section .testimonial-section_main-box p {
+    padding: 0px 15px;
+  }
+  .container .sold-list-section {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-column: 1/5;
+  }
+  .container .sold-list-section .sold-list-section_cols {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .sell-form-section {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-column: 1/5;
+  }
+  .container .sell-form-section .form-group {
+    width: 300px;
+  }
+  .container .meet-agent-section {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-column: 1/5;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .meet-agent-section img {
+    width: 300px;
+  }
+  .container .meet-agent-section p {
+    padding: 0px 12px;
+  }
+  .container .footer-section {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-column: 1/5;
+  }
+  .container .footer-section p {
+    padding: 0px 15px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

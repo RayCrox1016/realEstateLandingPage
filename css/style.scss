@@ -1,0 +1,410 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+$link-color: #1990ff;
+$heading-color: #242424;
+
+.container {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto auto auto;
+  display: grid;
+  justify-content: center;
+  width: 1200px;
+  margin: 0 auto;
+  a,
+  span,
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+  }
+  p {
+    font-family: "Source Serif Pro", serif;
+  }
+  .header-section {
+    grid-column: 1/9;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.48), rgba(0, 0, 0, 0.48)),
+      url(https://i.postimg.cc/L8H7L6P3/header-background-img.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 120px 0px;
+    // height: 550px;
+    // background-color: aqua;
+    vertical-align: middle;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    .header-flex {
+      display: flex;
+      justify-content: space-around;
+      .header-flex-one {
+        padding-top: 20px;
+        color: white;
+        h1 {
+          font-size: 45px;
+          padding-bottom: 20px;
+        }
+        p:nth-child(1) {
+          padding-bottom: 20px;
+          font-size: 18px;
+        }
+        p:last-child {
+          font-size: 22px;
+        }
+      }
+      .header-flex-two {
+        background-color: #f5f4f3;
+        padding: 50px 30px;
+        width: 368px;
+        p:nth-child(1) {
+          margin-bottom: 25px;
+          text-align: center;
+          font-size: 18px;
+        }
+        .form-group {
+          input {
+            width: 100%;
+            margin-bottom: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 5px;
+            font-size: 15px;
+            border: 1px solid;
+            border-radius: 4px;
+          }
+        }
+
+        .header-flex-two_button {
+          width: 100%;
+          color: white;
+          font-size: 15px;
+          font-weight: 600;
+          background-color: $link-color;
+          border: 0px;
+          padding: 15px 20px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .perks-section {
+    padding-top: 40px;
+    padding-bottom: 70px;
+    text-align: center;
+    grid-column: 1/9;
+    h1 {
+      color: $heading-color;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    p {
+      color: #3e3e3e;
+      font-size: 1.125rem;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+    }
+
+    .perk-section_icon-text {
+      display: flex;
+      justify-content: center;
+      gap: 80px;
+      text-align: center;
+      .icon-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h4 {
+          font-size: 1.5rem;
+          color: $heading-color;
+        }
+        img {
+          width: 80px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+  .testimonial-section {
+    display: flex;
+    grid-column: 1/9;
+    justify-content: center;
+    background-color: #f2f2f2;
+    padding: 35px 30px;
+    .testimonial-section_main-box {
+      width: 862px;
+      background-color: white;
+      text-align: center;
+
+      h1 {
+        color: $heading-color;
+        font-size: 2rem;
+        padding-top: 40px;
+      }
+      .testimonial-text {
+        padding-top: 30px;
+        font-size: 1.5rem;
+        color: $heading-color;
+        line-height: 1.5;
+      }
+      .testimonial-name {
+        line-height: 1.5;
+        padding-top: 30px;
+        color: $heading-color;
+        padding-bottom: 30px;
+      }
+
+      img {
+        max-width: 25px;
+        padding-top: 70px;
+      }
+    }
+  }
+  .sold-list-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    grid-column: 1/9;
+    text-align: center;
+    h1 {
+      font-size: 2rem;
+      color: $heading-color;
+    }
+    .house-description {
+      padding-top: 30px;
+      padding-bottom: 35px;
+      color: $heading-color;
+    }
+    .sold-list-section_cols {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+
+      .sold-list-col {
+        h2 {
+          padding-top: 30px;
+        }
+        img {
+          max-width: 256px;
+          max-height: 170px;
+        }
+        p {
+          color: $heading-color;
+          padding: 20px 0px;
+        }
+        a {
+          text-decoration: none;
+          color: $link-color;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+  .sell-form-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 70px;
+    // padding-bottom: 20px;
+    background-color: #4c4c4c;
+    // text-align: center;
+    grid-column: 1/9;
+    h1 {
+      color: white;
+      font-size: 2.5rem;
+    }
+    p {
+      color: white;
+      padding: 30px 0px;
+    }
+    span {
+      color: white;
+      font-size: 1.125rem;
+    }
+
+    .form-group {
+      width: 600px;
+      input {
+        width: 100%;
+        margin-bottom: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 5px;
+        font-size: 15px;
+        border: 1px solid;
+        border-radius: 4px;
+      }
+    }
+
+    .header-flex-two_button {
+      width: 100%;
+      color: white;
+      font-size: 15px;
+      font-weight: 600;
+      background-color: $link-color;
+      border: 0px;
+      padding: 12px 20px;
+      cursor: pointer;
+    }
+  }
+  .meet-agent-section {
+    padding: 70px 0px;
+    grid-column: 1/9;
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+    align-items: center;
+    img {
+      max-width: 425px;
+    }
+    .jane-rain-misson {
+      p {
+        color: $heading-color;
+      }
+      p:nth-child(1),
+      p:nth-child(2) {
+        padding-bottom: 20px;
+        font-size: 1.125rem;
+      }
+    }
+  }
+  .footer-section {
+    padding: 30px 0px;
+    grid-column: 1/9;
+
+    background-color: #f7f7f7;
+    color: #878787;
+    text-align: center;
+    a {
+      color: #878787;
+    }
+  }
+}
+@media only screen and (max-width: 767px) {
+  .container {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    .header-section {
+      //   width: 100%;
+      grid-column: 1/7;
+      padding: 20px 0px;
+
+      .header-flex {
+        align-items: center;
+        .header-flex-one {
+          margin-bottom: 20px;
+        }
+      }
+    }
+    .perks-section {
+      grid-column: 1/7;
+    }
+    .testimonial-section {
+      grid-column: 1/7;
+      .testimonial-section_main-box {
+        h1 {
+          padding: 25px 15px;
+        }
+        p {
+          padding: 0px 15px;
+        }
+      }
+    }
+    .sold-list-section {
+      grid-column: 1/7;
+    }
+    .sell-form-section {
+      grid-column: 1/7;
+      .form-group {
+        width: 600px;
+      }
+    }
+    .meet-agent-section {
+      grid-column: 1/7;
+
+      img {
+        width: 400px;
+      }
+    }
+    .footer-section {
+      grid-column: 1/7;
+      p {
+        padding: 0px 15px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 426px) {
+  .container {
+    background-image: none;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    .header-section {
+      //   width: 100%;
+      grid-column: 1/5;
+      padding: 20px 0px;
+
+      .header-flex {
+        flex-direction: column;
+        align-items: center;
+        .header-flex-one {
+          margin-bottom: 20px;
+
+          padding-left: 8px;
+        }
+        .header-flex-two {
+          width: 310px;
+        }
+      }
+    }
+    .perks-section {
+      grid-column: 1/5;
+      .perk-section_icon-text {
+        flex-direction: column;
+      }
+    }
+    .testimonial-section {
+      grid-column: 1/5;
+      .testimonial-section_main-box {
+        h1 {
+          padding: 25px 15px;
+        }
+        p {
+          padding: 0px 15px;
+        }
+      }
+    }
+    .sold-list-section {
+      grid-column: 1/5;
+      .sold-list-section_cols {
+        flex-direction: column;
+      }
+    }
+    .sell-form-section {
+      grid-column: 1/5;
+      .form-group {
+        width: 300px;
+      }
+    }
+    .meet-agent-section {
+      grid-column: 1/5;
+      flex-direction: column;
+      img {
+        width: 300px;
+      }
+      p {
+        padding: 0px 12px;
+      }
+    }
+    .footer-section {
+      grid-column: 1/5;
+      p {
+        padding: 0px 15px;
+      }
+    }
+  }
+}
